@@ -1,0 +1,10 @@
+1.SELECT bloodcamp.camp_id,bloodcamp.camp_title,bloodcamp.camp_date,SUM(bcollect.units_collected) FROM bloodcamp INNER JOIN bcollect on bloodcamp.camp_id=bcollect.camp_id WHERE bloodcamp.camp_id=5003
+2.requesting blood
+SELECT DISTINCT request.rid,request.rname,request.btype,blood_bank.bbname,request.units FROM request,blood_bank WHERE blood_bank.bb_id=8001
+3.order by desc
+SELECT donor.dn_id,donor.dname,donor.age,donor.btype from donor ORDER by donor.age DESC 
+rashtrotthana blood bank
+4.UPDATE blood_bank SET blood_bank.bbname='r bb ' where blood_bank.bb_id=8002;
+5.DELETE from donor WHERE donor.dn_id=305;
+SELECT * from donor
+SELECT COUNT(donor.dn_id)from donor where donor.sex='male' 
